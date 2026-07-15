@@ -6,6 +6,9 @@ import { Card, CardContent } from '../components/ui/card'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import examSheetImage from '../assets/nguyen-dang-hoang-nhu-qDgTQOYk6B8-unsplash.jpg'
+import studyDeskImage from '../assets/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg'
+import onlineStudyImage from '../assets/wes-hicks-4-EeTnaC1S4-unsplash.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -272,7 +275,7 @@ export default function Landing() {
             </div>
             <div className="flex-1 relative">
               <div className="absolute inset-0 bg-primary/10 blur-[100px] rounded-full -z-10" />
-              <img src="/student_exam_illustration_1778333674862.png" alt="Student taking exam" className="w-full rounded-[4rem] shadow-2xl shadow-slate-200/50 hover:scale-105 transition-transform duration-700" loading="lazy" />
+              <img src={examSheetImage} alt="Student filling in an exam answer sheet" className="w-full rounded-[4rem] shadow-2xl shadow-slate-200/50 hover:scale-105 transition-transform duration-700" loading="lazy" />
             </div>
           </div>
         </div>
@@ -296,7 +299,7 @@ export default function Landing() {
             </div>
             <div className="flex-1 relative">
               <div className="absolute inset-0 bg-violet-500/10 blur-[100px] rounded-full -z-10" />
-              <img src="/academic_intelligence_3d_1778333688043.png" alt="Academic Intelligence" className="w-full rounded-[4rem] shadow-2xl shadow-slate-200/50 hover:scale-105 transition-transform duration-700" loading="lazy" />
+              <img src={studyDeskImage} alt="Study desk with laptop and notebook" className="w-full rounded-[4rem] shadow-2xl shadow-slate-200/50 hover:scale-105 transition-transform duration-700" loading="lazy" />
             </div>
           </div>
         </div>
@@ -320,7 +323,7 @@ export default function Landing() {
             </div>
             <div className="flex-1 relative">
               <div className="absolute inset-0 bg-blue-500/10 blur-[100px] rounded-full -z-10" />
-              <img src="/modern_classroom_illustration_1778333707128.png" alt="Digital Classroom" className="w-full rounded-[4rem] shadow-2xl shadow-slate-200/50 hover:scale-105 transition-transform duration-700" loading="lazy" />
+              <img src={onlineStudyImage} alt="Student studying online with a laptop" className="w-full rounded-[4rem] shadow-2xl shadow-slate-200/50 hover:scale-105 transition-transform duration-700" loading="lazy" />
             </div>
           </div>
         </div>
